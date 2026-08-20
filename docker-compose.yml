@@ -1,0 +1,6 @@
+services:
+  postgres:
+    container_name: postgres
+    image: cimg/postgres:16.3
+    ports:
+      - "5432:5432"
