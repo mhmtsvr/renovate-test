@@ -6,7 +6,8 @@
       "description": "Test: allow postgres/cimg-postgres updates to jump to 18.x, including bare major tags like 18-alpine",
       "matchPackageNames": ["postgres", "cimg/postgres"],
       "matchDatasources": ["docker"],
-      "allowedVersions": "/^v?18(\\.[1-9][0-9]*)?(-.+)?$/"
+      "allowedVersions": "/^v?18(\\.[1-9][0-9]*)?(-.+)?$/",
+      "groupName": "postgres"
     }
   ]
 }
