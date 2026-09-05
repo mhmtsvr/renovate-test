@@ -3,7 +3,7 @@ version: 2.1
 executors:
   default:
     docker:
-      - image: cimg/go:1.26.2
+      - image: cimg/go:1.27.1
       - image: cimg/postgres:13.5
         environment:
           POSTGRES_USER: test
@@ -12,7 +12,7 @@ executors:
 jobs:
   postgres:
     docker:
-      - image: cimg/go:1.26.2
+      - image: cimg/go:1.27.1
         environment:
           DATABASE_MIGRATIONS: migrations/sql
       - image: postgres:13-alpine
